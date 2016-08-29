@@ -18,7 +18,7 @@ Honeycomb-control
 - Choose Element
 
 ####Save/Load:
-- Create Ajax request with (backbone)[http://backbonejs.ru/#Model-sync] for save json local
+- Create Ajax request with [backbone](http://backbonejs.ru/#Model-sync) for save json local
 
 #####Model(default):
 - Name
