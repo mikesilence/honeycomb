@@ -4,28 +4,28 @@
 Honeycomb
 Honeycomb-control
 
-###Release v.1
-Control panel:
+##Release v.1
+####Control panel:
 - Input Scale
 - Input Opacity
 - Button Modes
 - Button Save Pattern
 - Button Load Pattern
-- States: Hide, Show
+- States: Hide, Show, Active (default: hide)
 
-###Combs:
+####Combs:
 - SVG(PNG?)
 - Choose Element
 
-###Save/Load:
+####Save/Load:
 - Create Ajax request with (backbone)[http://backbonejs.ru/#Model-sync] for save json local
 
-####Model(default):
+#####Model(default):
 - Name
 - Scale
 - Opacity
 - Mode
 
-####Model(optional):
-- Array of element
+#####Model(optional):
+- Array of element (hide for user)
 - Window width
