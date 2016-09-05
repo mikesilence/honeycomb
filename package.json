@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "rm -rf ./static/*",
-    "dev": "npm run start && webpack & webpack-dev-server --content-base --colors --port 9090 ./"
+    "dev": "npm run start && webpack",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git"
