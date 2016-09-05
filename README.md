@@ -1,5 +1,7 @@
 #Honeycomb
 ![ascreen](screen.png)
+#!update!
+npm run server - запустит сайт на порту 3000. В качестве сервера ExpressJS
 
 ######CSS NAMESPACE
 Honeycomb
