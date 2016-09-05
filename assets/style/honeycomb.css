@@ -1,0 +1,78 @@
+
+$border: 1px solid #dfdfdf
+$black: #343434
+$blue: #3886e9
+
+.honeycomb
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: #e6e8e8
+  z-index: 99999
+  padding: 0 10px
+  box-sizing: border-box
+
+  li
+    display: inline-block
+
+  &_border
+    display: inline-block
+    width: 1px
+    height: 24px
+    margin: 20px 0
+    border-left: 1px solid #cacaca
+
+  &_components
+    display: inline-block
+
+  &_component
+    display: inline-block
+    margin: 20px 15px
+
+  &_name
+    font-size: 13px
+    color: $blue
+    vertical-align: middle
+
+  &_field
+    margin: 0 5px
+    input
+      width: 30px
+      height: 20px
+      border: none
+      font-size: 11px
+      font-weight: bold
+      text-align: center
+      color: $black
+      border-radius: 3px
+      border: $border
+
+  &_pixels
+    font-size: 13px
+    vertical-align: middle
+    color: $black
+
+  &_slider
+    position: relative
+    top: 2px
+    display: inline-block
+    width: 100px
+    height: 2px
+    background: #ffffff
+    border-radius: 12px
+    vertical-align: middle
+
+  &_thumb
+    position: relative
+    top: -9px
+    display: block
+    width: 18px
+    height: 18px
+    border-radius: 50%
+    background: #ffffff
+    border: $border
+
+    &:hover
+      background: #3886e9
+      border: transparent
