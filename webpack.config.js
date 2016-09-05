@@ -9,19 +9,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 config = {
   entry:  {
-    bootstrap: [
-      path.resolve(__dirname, 'assets', 'javascripts', 'bootstrap.js'),
-      path.resolve(__dirname, 'assets', 'javascripts', 'bootstrap-sprockets.js'),
-      path.resolve(__dirname, 'assets', 'stylesheets', '_bootstrap.scss'),
-      path.resolve(__dirname, 'assets', 'stylesheets', 'shop-homepage.css'),
-    ],
+    // bootstrap: [
+    //   path.resolve(__dirname, 'assets', 'javascripts', 'bootstrap.js'),
+    //   path.resolve(__dirname, 'assets', 'javascripts', 'bootstrap-sprockets.js'),
+    //   path.resolve(__dirname, 'assets', 'stylesheets', '_bootstrap.scss'),
+    //   path.resolve(__dirname, 'assets', 'stylesheets', 'shop-homepage.css'),
+    // ],
 
-    application: [
-      path.resolve(__dirname, 'assets', 'javascripts', 'application.js')
-    ]
-
-    // stage01: path.resolve(__dirname, 'assets', 'javascripts', 'junior.js'),
-    // stage02: path.resolve(__dirname, 'assets', 'javascripts', 'underscore.js')
+    // application: [
+    //   path.resolve(__dirname, 'assets', 'javascripts', 'application.js')
+    // ]
   },
   output: {
     path: path.resolve(__dirname, 'static'),
@@ -73,26 +70,5 @@ config = {
     })
   ]
 };
-
-if (process.env.NODE_VER === 'stage01') {
-  config.entry.application.push(path.resolve(__dirname, 'assets', 'javascripts', 'junior.js'));
-}
-
-if (process.env.NODE_VER === 'stage02') {
-  config.entry.application.push(path.resolve(__dirname, 'assets', 'javascripts', 'underscore.js'));
-}
-
-if (process.env.NODE_VER === 'stage03') {
-  config.module.loaders.push({
-    test: /\.pug$/,
-    loader: 'pug-loader'
-  })
-
-  config.plugins.push(new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: path.resolve(__dirname, 'template', 'index.pug')
-    })
-  )
-}
 
 module.exports = config;
